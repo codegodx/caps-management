@@ -30,8 +30,8 @@ export default function Navbars() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <Cmlogo className="w-10 h-10" bodyLogoClassName="fill-[#E9E9E9]" outlineLogoClassName="fill-[#544F4D]"/>
-        
+                    <Cmlogo className="w-10 h-10" bodyLogoClassName="fill-[#E9E9E9]" outlineLogoClassName="fill-[#544F4D]" />
+
                 </NavbarBrand>
             </NavbarContent>
 
@@ -39,15 +39,15 @@ export default function Navbars() {
 
                 {Navmenu.map((item, index) => (
                     <NavbarItem key={`${index}`}>
-                        <Link color={ path === item.link ? "primary" : "foreground"} href={item.link}>
+                        <Link color={path === item.link ? "primary" : "foreground"} href={item.link}>
                             {item.name}
                         </Link>
                     </NavbarItem>
-                    
+
                 ))}
-              
+
             </NavbarContent>
-          
+
             <NavbarMenu>
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
