@@ -1,36 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```svg
+  <svg width="150" height="150" viewBox="0 0 190 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <clip-path id="clip0_15_15">
+                    <path fill="red" d="M0 0h190v219H0z"/>
+                </clip-path>
+            </defs>
+            <path clip-path="url(#clip0_15_15)"
+                fill="current"
+                d="M43.64 188.768H43.544C41.528 187.52 40.088 185.792 39.128 183.776V183.68C38.84 183.008 38.552 182.24 38.456 181.472V181.376V181.184V181.088V180.992V180.8V180.512C38.36 179.936 38.36 179.36 38.36 178.784L38.456 161.024L14.84 168.32C8.88805 170.144 2.55205 166.784 0.728047 160.832C0.344047 159.776 0.248047 158.624 0.248047 157.472V109.28V61.088C0.248047 56.576 2.84005 52.736 6.58405 50.912L91.16 1.95201C94.904 -0.255993 99.512 0.0320069 102.872 2.24001L183.704 51.488C187.16 53.6 189.08 57.344 189.08 61.088V109.28V157.472C189.08 161.888 186.584 165.632 182.936 167.552L102.584 216.512C98.744 218.912 94.04 218.624 90.488 216.32L43.832 188.864L43.736 188.768H43.64ZM38.36 137.408L38.552 79.616C38.552 75.104 41.144 71.264 44.888 69.44L93.656 45.824C97.496 44 101.816 44.48 105.08 46.784L134.456 65.888L148.664 75.104C150.584 76.352 150.296 77.12 150.296 79.232V119.168C150.296 123.68 150.584 126.56 145.208 127.904L76.568 148.64V125.216L127.736 109.568V88.352L122.072 84.704L97.688 68.864L61.016 86.72L60.92 122.912V129.248L60.728 170.336C60.728 171.968 61.208 173.12 62.456 173.696L93.656 192.032C95.7681 193.088 97.688 192.992 99.416 191.936L164.12 152.576C165.368 151.808 166.232 150.464 166.424 148.352V109.28V70.112C166.136 68.384 165.368 66.944 163.928 65.888L98.168 25.856C97.112 25.184 95.96 25.184 94.904 25.76L25.112 66.176C23.768 67.424 22.904 68.96 22.712 70.976V109.184V141.056C22.616 141.728 22.904 142.112 23.672 141.824L38.36 137.312V137.408Z"
+            />
+        </svg>
