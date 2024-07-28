@@ -4,6 +4,9 @@ import { GoogleGeminiEffects } from "@/COMPONENTS/google-gemini";
 import { Headerstext, Products } from "@/CONFIG/site";
 import { Globe } from "@/COMPONENTS/globe/globe";
 import HeroParallax from "@/COMPONENTS/hero-paralax";
+import { FeaturesSection } from "@/COMPONENTS/feature";
+import {StarsBackground} from "@/COMPONENTS/background-stars";
+import {Stars} from "@/COMPONENTS/stars";
 
 export default function page() {
   return (
@@ -46,6 +49,11 @@ export default function page() {
       </section>
       <section className="max-w-2xl md:max-w-screen-2xl md:mx-auto h-full relative">
         <Globe />
+        <StarsBackground />
+        <Stars />
+      </section>
+      <section className="w-full py-20 h-full relative">
+        <FeaturesSection  />
       </section>
     </>
   );

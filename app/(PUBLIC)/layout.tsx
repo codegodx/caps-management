@@ -3,6 +3,7 @@ import Navbars from "@/COMPONENTS/navbar";
 import { footerMenu } from "@/CONFIG/site";
 
 
+
 export default function PublicLayout({
   children,
 }: {

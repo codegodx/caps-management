@@ -1,4 +1,4 @@
-import { Cmlogo } from "@/public/cmlogo";
+
 
 export const Headerstext = {
   title: "Caps Management",
@@ -135,8 +135,8 @@ export const Products = [
 
 export const footerMenu = [ {
 
-    title: "Tentang Kami",
-    link: "/tentang-kami",
+    title: "Dokumentasi",
+    link: "/dokumentasi",
 },
 {
     title: "Kontak Kami",
