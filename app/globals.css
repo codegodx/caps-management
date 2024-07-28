@@ -30,14 +30,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-     .no-scrollbar::-webkit-scrollbar {
-          
-           scrollbar-width: 10px;
-      }
-     /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;
-           scrollbar-width: 10px;  /* Firefox */
-    }
+  .no-scrollbar::-webkit-scrollbar {
+    scrollbar-width: 10px;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    scrollbar-width: 10px; /* Firefox */
+  }
 }

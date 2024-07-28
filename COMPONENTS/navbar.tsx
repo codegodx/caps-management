@@ -1,69 +1,86 @@
-"use client"
+"use client";
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 import { Cmlogo } from "@/public/cmlogo";
 import { Navmenu } from "@/CONFIG/site";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 export default function Navbars() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const path = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const path = usePathname();
 
-    const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
-        "Help & Feedback",
-        "Log Out",
-    ];
+  const menuItems = [
+    "Profile",
+    "Dashboard",
+    "Activity",
+    "Analytics",
+    "System",
+    "Deployments",
+    "My Settings",
+    "Team Settings",
+    "Help & Feedback",
+    "Log Out",
+  ];
 
-    return (
-        <Navbar onMenuOpenChange={setIsMenuOpen}>
-            <NavbarContent>
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
-                />
-                <NavbarBrand>
-                    <Cmlogo className="w-10 h-10" bodyLogoClassName="fill-[#E9E9E9]" outlineLogoClassName="fill-[#544F4D]" />
+  return (
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+        <NavbarBrand>
+          <Cmlogo
+            className="w-10 h-10"
+            bodyLogoClassName="fill-[#E9E9E9]"
+            outlineLogoClassName="fill-[#544F4D]"
+          />
+        </NavbarBrand>
+      </NavbarContent>
 
-                </NavbarBrand>
-            </NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+        {Navmenu.map((item, index) => (
+          <NavbarItem key={`${index}`}>
+            <Link
+              color={path === item.link ? "primary" : "foreground"}
+              href={item.link}
+            >
+              {item.name}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="end">
-
-                {Navmenu.map((item, index) => (
-                    <NavbarItem key={`${index}`}>
-                        <Link color={path === item.link ? "primary" : "foreground"} href={item.link}>
-                            {item.name}
-                        </Link>
-                    </NavbarItem>
-
-                ))}
-
-            </NavbarContent>
-
-            <NavbarMenu>
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                            }
-                            className="w-full"
-                            href="#"
-                            size="lg"
-                        >
-                            {item}
-                        </Link>
-                    </NavbarMenuItem>
-                ))}
-            </NavbarMenu>
-        </Navbar>
-    );
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              color={
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                    ? "danger"
+                    : "foreground"
+              }
+              className="w-full"
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
+  );
 }

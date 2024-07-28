@@ -15,10 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ID" className="scrollbar-thumb-orange-700 scrollba scrollbar-track-transparent scrollbar scrollbar-w-1 overflow-y-scroll overflow-x-hidden scrollbar-thumb-rounded-full">
-      <body className={`!bg-black ${inter.className}`}>
-        {children}
-       </body>
+    <html
+      lang="ID"
+      className="scrollbar-thumb-orange-700 scrollba scrollbar-track-transparent scrollbar scrollbar-w-1 overflow-y-scroll overflow-x-hidden scrollbar-thumb-rounded-full"
+    >
+      <body className={`!bg-black ${inter.className}`}>{children}</body>
     </html>
   );
 }

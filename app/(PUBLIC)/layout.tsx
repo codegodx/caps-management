@@ -1,7 +1,4 @@
-
-import Navbars from "@/COMPONENTS/navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-
+import Navbars from "@/components/navbar";
 
 export default function PublicLayout({
   children,
@@ -10,33 +7,10 @@ export default function PublicLayout({
 }) {
   return (
     <>
-      <Navbars/>
-
+      <Navbars />
       <main className="antialiased min-h-screen" >
-        
-          {children}
-          </main>
+        {children}
+      </main>
     </>
   );
 }
-
-
-const navItems = [
-  {
-    name: "Home",
-    link: "/",
-    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "About",
-    link: "/about",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-    icon: (
-      <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-    ),
-  },
-];
