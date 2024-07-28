@@ -52,7 +52,7 @@ export default function page() {
         <StarsBackground />
         <Stars />
       </section>
-      <section className="w-full py-20 h-full relative">
+      <section className="w-full px-4 md:px-0 py-20 h-full relative">
         <FeaturesSection  />
       </section>
     </>

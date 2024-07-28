@@ -22,6 +22,7 @@ export function GoogleGeminiEffect({
 }) {
   return (
     <div className={cn("sticky top-[5rem] ", className)}>
+      <div className="w-full h-auto md:max-w-2xl mx-auto px-4 md:px-0">
       <p className="text-5xl md:text-7xl font-bold tracking-tighter text-center bg-clip-text p-2 text-transparent bg-gradient-to-b from-neutral-100 to-neutral-500">
         {title || `Build with Aceternity UI`}
       </p>
@@ -30,7 +31,8 @@ export function GoogleGeminiEffect({
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
       </p>
-      <div className="w-full h-[890px] -top-60 md:-top-40 flex items-center justify-center bg-red-transparent absolute ">
+      </div>
+      <div className="w-full h-20 -top-60 md:-top-40 flex items-center justify-center bg-red-transparent absolute ">
         <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
           {buttonText || `ui.aceternity.com`}
         </button>
