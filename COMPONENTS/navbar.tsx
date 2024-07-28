@@ -33,7 +33,7 @@ export default function Navbars() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar shouldHideOnScroll={true} isBordered={true} isBlurred={true} classNames={{base: "bg-[#0E0E0E]/20"}}  onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -41,18 +41,27 @@ export default function Navbars() {
         />
         <NavbarBrand>
           <Cmlogo
-            className="w-10 h-10"
+            className="w-10 h-10 hidden sm:block"
             bodyLogoClassName="fill-[#E9E9E9]"
             outlineLogoClassName="fill-[#544F4D]"
           />
         </NavbarBrand>
       </NavbarContent>
+      <NavbarContent className="sm:hidden" justify="end">
+      <Cmlogo
+        className="w-10 h-10"
+        bodyLogoClassName="fill-[#E9E9E9]"
+        outlineLogoClassName="fill-[#544F4D]"
+      />
+
+      </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
+      
         {Navmenu.map((item, index) => (
           <NavbarItem key={`${index}`}>
             <Link
-              color={path === item.link ? "primary" : "foreground"}
+              color={path === item.link ? "success" : "warning"}
               href={item.link}
             >
               {item.name}
@@ -62,21 +71,13 @@ export default function Navbars() {
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
+        {Navmenu.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
+              color={path === item.link ? "success" : "warning"}
+              href={item.link}
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

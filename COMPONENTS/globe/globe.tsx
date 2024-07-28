@@ -46,7 +46,7 @@ export const Globe = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-3 mx-auto py-10 max-w-7xl bg-black",
+        "grid grid-cols-1 md:grid-cols-3 py-10 w-full bg-black",
         className,
       )}
     >

@@ -1,4 +1,7 @@
+import {Footer} from "@/COMPONENTS/footer";
 import Navbars from "@/COMPONENTS/navbar";
+import { footerMenu } from "@/CONFIG/site";
+
 
 export default function PublicLayout({
   children,
@@ -11,6 +14,7 @@ export default function PublicLayout({
       <main className="antialiased min-h-screen" >
         {children}
       </main>
+      <Footer menuLink={footerMenu}  />
     </>
   );
 }

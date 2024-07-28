@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="ID"
-      className="scrollbar-thumb-orange-700 scrollba scrollbar-track-transparent scrollbar scrollbar-w-1 overflow-y-scroll overflow-x-hidden scrollbar-thumb-rounded-full"
+      className="scrollbar-thumb-orange-700 scrollbar-track-black scrollbar scrollbar-w-1 overflow-y-scroll overflow-x-hidden scrollbar-thumb-rounded-full"
     >
       <body className={`!bg-black ${inter.className}`}>{children}</body>
     </html>

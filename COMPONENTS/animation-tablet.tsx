@@ -59,7 +59,7 @@ export const ContainerScroll = ({
 const Header = ({ translate, titleComponent, subtitleComponent }: any) => {
   return (
     <motion.div
-      className="md:max-w-5xl w-full flex justify-center items-center md:mx-auto "
+      className="md:max-w-5xl w-fit flex justify-center items-center md:mx-auto "
       style={{
         translateY: translate,
         transition: "transform 0.5s ease-out",

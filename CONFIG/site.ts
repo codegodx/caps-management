@@ -1,3 +1,5 @@
+import { Cmlogo } from "@/public/cmlogo";
+
 export const Headerstext = {
   title: "Caps Management",
   desc: "Software berbasis Web untuk manajemen penjualan, stock, dan service Smartphone.",
@@ -128,4 +130,22 @@ export const Products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
+];
+
+
+export const footerMenu = [ {
+
+    title: "Tentang Kami",
+    link: "/tentang-kami",
+},
+{
+    title: "Kontak Kami",
+    link: "/kontak-kami",
+},
+
+{
+    title: "FAQ",
+    link: "/faq",
+},
+
 ];

@@ -8,7 +8,7 @@ import HeroParallax from "@/COMPONENTS/hero-paralax";
 export default function page() {
   return (
     <>
-      <section className="w-full h-[200vh] relative">
+      <section className="w-full h-[130vh] md:h-[140vh] relative">
         <div >
           <GoogleGeminiEffects
             title={Headerstext.title}
@@ -18,6 +18,7 @@ export default function page() {
           />
         </div>
       </section>
+
       <section className="w-full h-full relative">
         <ContainerScroll
           titleComponent="Dashboard Panel."
@@ -36,15 +37,15 @@ export default function page() {
       </section>
       <section className="w-full h-full relative">
         <HeroParallax
-          className="w-full md:max-w-7xl md:mx-auto py-0 md:py-16 relative z-20 rounded-2xl no-visible-scrollbar "
+          className="w-full md:max-w-7xl md:mx-auto py-0 md:py-16 relative z-20 rounded-2xl "
           products={Products}
           textclassName="p-10"
           headerTitle="Easy and Friendly Access"
           headerDesc="Mudah untuk dioprasian dalam mengelola dan memanajemen jasa perbaikan smartphone. Anda dapat dengan mudah mengatur jadwal layanan, mengelola sparepart, accessories dan anda juga dapat mengakses informasi tentang status perbaikan."
         />
       </section>
-      <section className="w-full h-full relative">
-        <Globe className="max-w-screen-2xl mx-auto relative z-40" />
+      <section className="max-w-2xl md:max-w-screen-2xl md:mx-auto h-full relative">
+        <Globe />
       </section>
     </>
   );
