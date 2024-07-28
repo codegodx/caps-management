@@ -1,9 +1,9 @@
-import { ContainerScroll } from "@/components/animation-tablet";
+import { ContainerScroll } from "@/COMPONENTS/animation-tablet";
 import Image from "next/image";
-import { GoogleGeminiEffects } from "@/components/google-gemini";
+import { GoogleGeminiEffects } from "@/COMPONENTS/google-gemini";
 import { Headerstext, Products } from "@/CONFIG/site";
-import { Globe } from "@/components/globe/globe";
-import HeroParallax from "@/components/hero-paralax";
+import { Globe } from "@/COMPONENTS/globe/globe";
+import HeroParallax from "@/COMPONENTS/hero-paralax";
 
 export default function page() {
   return (
